@@ -1,9 +1,12 @@
 import createElement from '../lib/createElement';
 import SignInButton from '../components/SignInButton';
 
-export default (props) => createElement('div', {
+export default ({ store }) => createElement('div', {
   className: 'sign-in',
   children: [
-    SignInButton({ disabled: !!props.store.getState().loading }),
+    SignInButton({
+      disabled: !!store.getState().loading,
+      onclick: () => store.setState({ loading: true }),
+    }),
   ],
 });
