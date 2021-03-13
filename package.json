@@ -12,7 +12,9 @@
   "author": "Glory Rojas",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
     "@babel/plugin-transform-destructuring": "^7.13.0",
+    "@babel/plugin-transform-duplicate-keys": "^7.12.13",
     "@babel/plugin-transform-spread": "^7.13.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",

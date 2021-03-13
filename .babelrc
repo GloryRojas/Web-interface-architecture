@@ -4,7 +4,9 @@
     "test": {
       "plugins": [
         "transform-es2015-modules-commonjs",
-        "@babel/plugin-transform-destructuring"
+        "@babel/plugin-transform-destructuring",
+        "@babel/plugin-transform-duplicate-keys",
+        "@babel/plugin-proposal-object-rest-spread"
       ]
     }
   }

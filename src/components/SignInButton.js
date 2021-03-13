@@ -1,3 +1,6 @@
 import Button from './Button';
 
-export default () => Button({ text: 'Sign in' });
+export default (props) => Button({
+  text: 'Sign in',
+  disabled: !!props.disabled,
+});
